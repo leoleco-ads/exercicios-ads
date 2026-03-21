@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    printf("Meu nome é Leonardo!\n");
+    printf("Estou começando na programação!\n");
+    return 0;
+}
+
+//Estrutura básica da linguagem C

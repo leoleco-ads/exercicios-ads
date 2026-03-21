@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main () {
+
+    char nome[30];
+    int idade;
+    float altura;
+    float peso;
+    
+    printf("Olá, bem vindo ao medidor de IMC! Por favor, insira seus dados.\n Insira seu Nome:\n");
+    fgets(nome, 30, stdin);
+    printf("Insira sua idade:\n");
+    scanf("%d", &idade);
+    printf("Insira sua altura (em metros e utilize ponto)\n");
+    scanf("%f", &altura);
+    printf("Insira seu peso (em quilos)\n");
+    scanf("%f", &peso);
+
+        //Calculo IMC
+            float imc = peso/(altura*altura);
+
+            printf("\nSeu nome é:%s",nome);
+            printf("Você tem:%d anos\n",idade);
+            printf("Seu IMC é:%.2f\n", imc);
+    
+    //Classificação do IMC
+
+        if (imc <= 18.5) {
+        printf("Classificação: Abaixo do peso\n");
+        }   else if (imc >= 18.5 && imc <= 24.9) {
+        printf("Classificação: Peso normal\n");
+        }   else if (imc >= 25 && imc <=29.9) {
+        printf("Classificação: Sobrepeso\n");
+        }   else
+        printf("Classificação: Obesidade\n");
+
+    //Verificação se é maior de idade ou não
+        if (idade>=18) {
+            printf("Maior de idade\n");
+            }    else
+            printf("Menor de idade\n");
+        
+return 0;
+}

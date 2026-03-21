@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main () {
+    int a,b;
+        printf("Digite o primeiro número:\n");
+        scanf("%d", &a);
+        printf("Digite o segundo número:\n");
+        scanf("%d", &b);
+
+    int soma = a+b;
+    int sub = a-b;
+    int mult = a*b;
+        printf("Essa é a soma:%d\n",soma);
+        printf("Essa é a subtração:%d\n",sub);
+        printf("Essa é a multiplicação:%d\n",mult);
+
+    if (b==0) {
+        printf("Impossível dividir por zero\n");
+    } else {
+        int div = a/b;
+        printf("Essa é a divisão:%d\n", div);
+    }
+return 0;
+}
+
+//Primeira utilização de operações matemáticas.

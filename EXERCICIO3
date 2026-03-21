@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+
+    int tipo;
+
+        printf("Olá meu amigo!\nAntes de começar, digite um número abaixo para descobrir se é positivo, negativo ou zero:\n");
+        scanf("%d", &tipo);
+            if (tipo > 0) {
+                printf("Esse número é positivo\n");
+               } else  if (tipo < 0) {
+                printf("Esse numero é negativo\n");
+               } else {
+                printf("Esse número é zero\n");            
+            }
+    return 0;
+}
+
+//Primeira utilização de if else.

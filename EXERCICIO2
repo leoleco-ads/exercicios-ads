@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    char nome[50];
+    int idade;
+
+        printf("Digite seu nome\n");
+        fgets(nome, 50, stdin);
+        printf("Digite a sua idade\n");
+        scanf("%d", &idade);
+    
+    printf("Seu nome é: %s\n",nome);
+    printf("Sua idade é: %d\n", idade);
+    return 0;
+}
+
+//Código básico de leitura de nome e idade.

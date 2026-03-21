@@ -7,7 +7,7 @@ int main () {
     float altura;
     float peso;
     
-    printf("Olá, bem vindo ao medidor de IMC! Por favor, insira seus dados.\n Insira seu Nome:\n");
+    printf("Olá, bem vindo ao medidor de IMC! Por favor, insira seus dados.\n Insira seu nome:\n");
     fgets(nome, 30, stdin);
     printf("Insira sua idade:\n");
     scanf("%d", &idade);

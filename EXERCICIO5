@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main () {
+    int num;
+        printf("Aqui descobriremos se o número digitado é positivo, negativo ou zero!\nPara começar, digite um número\n");
+        scanf("%d",&num);
+    
+    //Verificar se é zero, positivo ou negativo
+    if (num==0) {
+        printf("O número digitado é zero!\n");
+    } else if (num>0) {
+         printf("O numero é positivo!\n");
+    } else  
+        printf("O número é negativo!\n");
+    
+    //Verificar se é par ou ímpar
+    if (num % 2 == 0) {
+        printf("%d é Par\n", num);
+    } else {
+        printf("%d é Impar\n", num);
+    }
+return 0;
+}
+
+//Utilização de if else com operações matemáticas.

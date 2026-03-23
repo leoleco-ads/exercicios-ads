@@ -1,0 +1,18 @@
+//Conte quantos números são múltiplos de 3 de 1 até 30
+
+#include <stdio.h>
+
+int main() {
+    
+    int i = 1;
+    int contar = 0;
+
+    while (i <= 30) {
+        if (i % 3 == 0) {
+    contar++;
+    }
+    i++;
+}
+printf("Existem %d números múltiplos de 3 entre 1 e 30\n", contar);
+return 0;
+}

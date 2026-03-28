@@ -1,0 +1,40 @@
+//O usuário deverá digitar um número, repita até o zero ser digitado.
+//enquanto zero não for digitado, os números deverão ser somados, contados e por último ser feita a média dos números.
+//quando zero for digitado, o programa mostra a soma, a quantidade e a média.
+
+#include <stdio.h>
+
+int main () {
+
+    int num;
+    int soma = 0;
+    int contar = 0;
+    float media;
+
+    //Pedimos o número
+
+    printf("Digite um número:\n");
+    scanf("%d", &num);
+
+    //Enquanto não for digitado zero, nós somaremos os valores digitados, contaremos e depois é feito a média dos números.
+
+        while (num!=0){
+            soma = soma + num;
+            contar++;
+            printf("Digite outro número:\n");
+            scanf("%d", &num);
+        }
+        
+    printf("A soma é %d\n", soma);
+    printf("Quantidade:%d\n", contar);
+
+        if (contar>0) {
+        media = (float)soma/contar;
+        printf("A média dos números é:%.2f\n", media);
+        } else {
+        printf("Nenhum número válido foi digitado!\n");
+        }
+    
+        
+return 0;
+}
